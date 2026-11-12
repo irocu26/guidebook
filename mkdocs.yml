@@ -1,7 +1,6 @@
 site_name: "IRoC-U Technical Survival Guide"
 site_description: "An unfiltered engineering guide for GPS-denied drones using ArduPilot, ROS 2, and Companion Computers."
 site_author: "Senior Team"
-docs_dir: "."
 
 theme:
   name: material
@@ -28,7 +27,7 @@ plugins:
   - search
 
 nav:
-  - "The Mindset": README.md
+  - "The Mindset": index.md
   - "01 - Simulation First": 01-Simulation-First/01-sitl-and-gazebo.md
   - "02 - Software Architecture": 02-Software-Architecture/01-ros2-vs-pymavlink.md
   - "03 - GPS-Denied: Optical Flow": 03-The-GPS-Denied-Transition/01-optical-flow-and-rangefinder.md

@@ -24,5 +24,11 @@ jobs:
       - name: Install MkDocs Material
         run: pip install mkdocs-material
 
+      - name: Prepare Docs Structure
+        run: |
+          mkdir -p docs
+          cp README.md docs/index.md
+          cp -r 01-Simulation-First 02-Software-Architecture 03-The-GPS-Denied-Transition 04-Hardware-and-Reality-Checks 05-Debugging docs/
+
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
